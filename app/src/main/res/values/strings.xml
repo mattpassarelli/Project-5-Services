@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project 5 Services</string>
+    <string name="add_1_egg">Add 1 Egg</string>
+    <string name="add_2_eggs">Add 2 Eggs</string>
+    <string name="make_breakfast">Make Breakfast</string>
+    <string name="subtract_1_egg">Subtract 1 Egg</string>
+</resources>
