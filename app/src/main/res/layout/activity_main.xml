@@ -20,7 +20,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text="@string/add_1_egg"
-            android:onClick="doThing"/>
+            android:onClick="addOne"/>
 
         <Button
             android:id="@+id/addTwo"

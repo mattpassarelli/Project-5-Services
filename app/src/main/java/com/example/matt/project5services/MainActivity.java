@@ -4,8 +4,11 @@ import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    private final String EGGS = "Eggs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void doThing()
-    {
-        Intent intent = new Intent(".Receiver");
+    public void addOne(View view) {
+        Intent intent = new Intent("com.example.matt.Project5Services.MYACTION");
+        intent.putExtra(EGGS, 1);
         sendBroadcast(intent);
     }
-
 }
