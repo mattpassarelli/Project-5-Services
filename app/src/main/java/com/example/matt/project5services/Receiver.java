@@ -12,12 +12,12 @@ public class Receiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "Yay broadcasts", Toast.LENGTH_SHORT).show();
-
         Bundle extra = intent.getExtras();
         Intent i = new Intent(context, MyService.class);
 
         int num = extra.getInt(EGGS);
+
+        //Toast.makeText(context, "" + num, Toast.LENGTH_SHORT).show();
 
         i.putExtra(EGGS, num);
         context.startService(i);

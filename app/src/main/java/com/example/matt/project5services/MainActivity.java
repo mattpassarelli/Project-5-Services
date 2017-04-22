@@ -15,13 +15,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("");
+        setTitle("Eggs? Eggs!");
 
     }
 
     public void addOne(View view) {
         Intent intent = new Intent("com.example.matt.Project5Services.MYACTION");
         intent.putExtra(EGGS, 1);
+        sendBroadcast(intent);
+    }
+
+    public void addTwo(View view) {
+        Intent intent = new Intent("com.example.matt.Project5Services.MYACTION");
+        intent.putExtra(EGGS, 2);
+        sendBroadcast(intent);
+    }
+
+    public void subtractOne(View view) {
+        Intent intent = new Intent("com.example.matt.Project5Services.MYACTION");
+        intent.putExtra(EGGS, -1);
+        sendBroadcast(intent);
+    }
+
+    public void breakfast(View view) {
+        Intent intent = new Intent("com.example.matt.Project5Services.MYACTION");
+        intent.putExtra(EGGS, 3);
         sendBroadcast(intent);
     }
 }
